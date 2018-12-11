@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body bgcolor="#8a2be2">
+<table border="|">
+    <tr>
+        <th>pid</th>
+        <th>pname</th>
+        <th>pcost</th>
+        <th>pmfdt</th>
+        <th>pexpdt</th>
+    </tr>
+    { % for rec in records %}
+    <tr>
+        <td>{{ rec.pid }}</td>
+         <td>{{ rec.pname }}</td>
+         <td>{{ rec.pcost }}</td>
+         <td>{{ rec.pmfdt}}</td>
+         <td>{{ rec.pexpdt }}</td>
+    </tr>
+    { % end for %}
+</table>
+<a href="/Token2"> Click Here to insert Another Products</a>
+
+</body>
+</html>
